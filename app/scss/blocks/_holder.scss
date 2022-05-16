@@ -1,0 +1,120 @@
+.holder {
+    background-image: url(../../img/holder/decorate.png);
+    &.sleep {
+        background-image: url(../../img/holder/decorate-2.png);
+        padding-bottom: 11px;
+    }
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+
+    .slider-arrows {
+        top: 200px;
+        opacity: .5;
+    }
+}
+
+.holder-slider {
+    &__head {
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+
+    &__subtitle {
+        text-align: right;
+        padding: 92px 80px 0 0;
+    }
+
+    &__descr {
+        margin-top: -230px;
+        padding: 160px 0 0 132px;
+        min-height: 320px;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        .descr__head {
+            position: relative;
+            padding-right: 68px;
+            &.descr__head-sleep {
+                padding-right: 215px;
+            }
+
+            img {
+                position: absolute;
+                right: 0;
+                top: -8px;
+            }
+            .holder__star-list {
+                position: absolute;
+                right: 0;
+                top: -7px;
+                img {
+                    position: static;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        text-align: center;
+    }
+}
+
+.holder-slider__info {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.holder-slider__info-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.holder-slider__info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 57px;
+    min-height: 200px;
+    margin-bottom: 66px;
+    position: relative;
+}
+
+.holder-slider__info-subtitle {
+    position: absolute;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+    top: 97px;
+    left: -97px;
+    width: 200px;
+    height: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.holder-slider__info-title {
+    width: 100%;
+    padding-left: 40px;
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 800;
+    position: relative;
+
+    .holder-pricing__span {
+        font-size: 14px;
+        line-height: 0;
+        text-align: right;
+        letter-spacing: 5.25px;
+        opacity: 0.75;
+        font-weight: 400;
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+
+    }
+}
